@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	
+
+	public static void main(String[] args) {
+		
+		int count,i,search_count;
+		 String input;
+		
+		Scanner scan=new Scanner(System.in);
+		List<Member> memberList =new ArrayList<>();
+		
+		System.out.println("Enter the number of Members:");
+		count=Integer.parseInt(scan.nextLine());
+		
+		String[] individual_details=new String[3];
+		
+		
+		for(i=0;i<count;i++)
+		{
+			System.out.println("Enter the Member Details:");
+			input=scan.nextLine();
+			individual_details=input.split(":");
+			Member individual=new Member(individual_details[0],individual_details[1],individual_details[2]);
+			memberList.add(individual);
+		}
+		
+		System.out.println("Enter the number of times Membership category needs to be searched:");
+		search_count=Integer.parseInt(scan.nextLine());
+		
+		String[] category = new String[search_count];
+		for(i=0;i<search_count;i++)
+		{
+			System.out.println("Enter the Category");
+			category[i]=scan.nextLine();
+			ZEEShop shop=new ZEEShop(category[i],memberList);
+			Thread thread=new Thread(shop);
+			thread.start();
+			
+			try {
+				thread.join();
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
+			
+			
+			for(i=0;i<search_count;i++)
+			{
+				System.out.println(category[i]+":"+shop.getCount());
+			
+		    }
+
+	   }
+   }
+}

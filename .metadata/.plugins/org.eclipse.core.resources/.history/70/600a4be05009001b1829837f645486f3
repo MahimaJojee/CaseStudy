@@ -1,0 +1,44 @@
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+     Scanner scan=new Scanner(System.in);
+     
+     int count,i,price,discount;
+     String input;
+     String[] input_array=new String[100];
+     String[] item=new String[100];
+     double[] result=new double[100];
+     double small;
+     
+     
+     count=scan.nextInt();
+     for(i=0;i<count;i++)
+     {
+         input=scan.nextLine();
+         input_array =input.split(",");
+         System.out.println(input_array.length());
+        for(String token:input_array) 
+        System.out.println(token);
+        
+        item[i]=input_array[0];
+        price=Integer.parseInt(input_array[1]);
+        discount=Integer.parseInt(input_array[2]);
+        result[i]=price*discount*0.01;
+         System.out.println(item[i]+result[i]);
+     }
+     
+     small=result[0];
+     for(i=1;i<count;i++)
+     {
+         if(result[i]<=small)
+          small=result[i];
+     }
+     
+     for(i=0;i<count;i++)
+     {
+         if(small==result[i])
+         System.out.println(item[i]);
+     }
+        
+    }
+}

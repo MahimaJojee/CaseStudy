@@ -7,7 +7,7 @@ import java.util.List;
 import com.cognizant.truyum.model.MenuItem;
 import com.cognizant.truyum.util.DateUtil;
 
-public abstract class MenuItemDaoCollectionImpl implements MenuItemDao {
+public class MenuItemDaoCollectionImpl implements MenuItemDao {
 
 	private List<MenuItem> menuItemList;
 	

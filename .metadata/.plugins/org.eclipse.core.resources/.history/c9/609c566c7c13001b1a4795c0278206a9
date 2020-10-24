@@ -1,0 +1,24 @@
+package p1;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main (String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        Account account=new Account(0,0.0);
+        System.out.println("Enter the account number:");
+        account.setAccountNumber(scan.nextLong());
+        System.out.println("Enter the available amount in the account:");
+        account.setBalanceAmount(scan.nextDouble());
+        System.out.println("Enter the amount to be deposited:");
+        account.deposit(scan.nextDouble());
+        System.out.println("Available balance is:%.2f",account.getBalanceAmount());
+        System.out.println("Enter the amount to be withdrawn:");
+        boolean res=account.withdraw(scan.nextDouble());
+        if(res==false)
+        	System.out.println("Insufficient balance");
+        System.out.printf("Available balance is:%.2f",account.getBalanceAmount());
+    }    
+}

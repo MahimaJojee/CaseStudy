@@ -1,0 +1,11 @@
+package p1;
+
+public class Account {
+
+	
+		private long accountNumber;
+		private double balanceAmount;
+
+	
+
+}

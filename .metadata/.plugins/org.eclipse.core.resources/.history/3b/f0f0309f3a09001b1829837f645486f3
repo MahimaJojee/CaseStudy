@@ -1,0 +1,68 @@
+import java.util.*;
+import java.io.*;
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String args[])
+    {
+        int ticket_count,discount;
+        int flag=0;
+        double cost=0;
+        char refreshment,circle,coupon;
+        
+        Scanner scan=new Scanner(System.in);
+        
+        System.out.println("Enter the no of ticket:");
+        ticket_count=scan.nextInt();
+        if((ticket_count<5)||(ticket_count>40))
+        {
+            System.out.println("Minimum of 5 and Maximum of 40 Tickets");
+            System.exit(0);
+        }
+        
+        System.out.println("Do you want refreshment:");
+        refreshment=scan.next().charAt(0);
+        
+        
+        
+        System.out.println("Do you have coupon code:");
+        coupon=scan.next().charAt(0);
+          
+        
+        System.out.println("Enter the circle:");
+        circle=scan.next().charAt(0);
+        if(circle=='k')
+        {
+            cost+=(ticket_count*75);
+        } 
+        else if(circle=='q')
+        {
+            cost+=(ticket_count*150);
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }
+        
+        if((ticket_count>20))
+            {
+                cost-=(0.10*cost);
+            }
+        if(coupon=='y')
+            {
+                cost-=(0.02*cost);
+                flag=1;
+            }
+        
+        if(refreshment=='y')
+            cost+=50;
+        
+        
+            
+        System.out.printf("Ticket cost:%.2f",cost);    
+        
+    }
+    
+   
+}

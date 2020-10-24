@@ -1,0 +1,10 @@
+package com.cognizant.truyum.dao;
+
+public class MenuItemDao {
+	
+	public  List<MenuItem> getMenuItemListAdmin();
+	public  List<MenuItem> getMenuItemListCustomer();
+	public modifyMenuItem(menuItem: MenuItem): void
+	public getMenuItem(menuItemId: long): MenuItem
+
+}

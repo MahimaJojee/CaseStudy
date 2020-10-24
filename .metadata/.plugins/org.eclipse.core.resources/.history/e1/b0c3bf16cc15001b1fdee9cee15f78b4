@@ -1,0 +1,26 @@
+package com.cognizant.truyum.dao;
+
+public class CartDaoCollectionImplTest {
+	
+	public static void main(String args[])
+	{
+	CartDaoCollectionImpl cartDaoCollectionImpl = new CartDaoCollectionImpl();
+	}
+	
+	
+	
+	public void testAddCartItem()
+	{
+		CartDaoCollectionImpl cartDaoCollectionImpl = new CartDaoCollectionImpl();
+		CartDao cartDao = cartDaoCollectionImpl;
+	}
+	public void testGetAllCartItems()
+	{
+		
+	}
+	public void testRemoveCartItem()
+	{
+		
+	}
+
+}

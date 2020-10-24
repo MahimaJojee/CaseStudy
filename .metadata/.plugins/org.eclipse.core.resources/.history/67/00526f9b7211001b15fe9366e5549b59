@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+//import java.util.*;
+//import java.io.*;
+
+public class Trial
+{
+    public static void main(String args[])
+    {
+           List<Integer> first=new ArrayList<Integer>();
+           first.add(1);
+           first.add(1);
+           first.add(1);
+           first.add(1);
+           System.out.println("First List:"+first);
+           
+           
+           
+           
+           
+           
+    }
+    
+}   

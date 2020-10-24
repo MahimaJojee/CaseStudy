@@ -1,0 +1,23 @@
+package com.cognizant.truyum.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.cognizant.truyum.model.MenuItem;
+
+public abstract class MenuItemDaoCollectionImpl implements MenuItemDao {
+
+	private List<MenuItem> menuItemList;
+	
+	public void MenuItemDaoCollectionImpl()
+	{
+		menuItemList=new ArrayList<>();
+	}
+	
+	public  List<MenuItem> getMenuItemListAdmin();
+	public  List<MenuItem> getMenuItemListCustomer();
+	public  void modifyMenuItem(MenuItem menuItem);
+	public  MenuItem getMenuItem(long menuItemId);
+
+		
+}

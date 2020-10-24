@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+//import java.util.*;
+//import java.io.*;
+
+public class Trial
+{
+    public static void main(String args[])
+    {
+           List<Integer> first=new ArrayList<Integer>();
+           first.add(1);
+           first.add(2);
+           first.add(3);
+           first.add(4);
+           System.out.println("First List:"+first);
+           
+           List<Integer> second=new LinkedList<Integer>();
+           second.add(1);
+           second.add(4);
+           second.add(3);
+           second.add(2);
+           System.out.println("Second List:"+ second);
+           
+           
+           
+           
+           
+           
+    }
+    
+}   

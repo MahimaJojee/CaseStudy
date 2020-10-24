@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int count,i;
+		
+		Scanner scan=new Scanner(System.in);
+		List<Member> memberList =new ArrayList<>();
+		Member member=new Member();
+		System.out.println("Enter the number of Members:");
+		count=Integer.parseInt(scan.nextLine());
+		String[] details=new String[count];
+		
+		for(i=0;i<count;i++)
+		{
+			details[i]=scan.nextLine().split(":");
+		}
+		
+
+	}
+
+}
