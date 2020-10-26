@@ -1,0 +1,17 @@
+package com.cognizant.truyum.dao;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStreamReader;
+import java.sql.Connection;
+
+public class ConnectionHandler {
+	
+	public static Connection getConnection() throws FileNotFoundException
+	{
+		FileInputStream fis=new FileInputStream("C:\\Users\\Mahima Jojee\\eclipse-workspace\\877728\\truYum\\connection.properties");
+		BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
+		String line = reader.readLine();
+	}
+}

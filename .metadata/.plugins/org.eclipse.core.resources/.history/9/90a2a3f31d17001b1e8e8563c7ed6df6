@@ -1,0 +1,25 @@
+package com.cognizant.truyum.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.sql.*
+
+import com.cognizant.truyum.model.MenuItem;
+
+public class MenuItemDaoSqlImpl {
+
+	public List<MenuItem> getMenuItemListAdmin()
+	{
+		List<MenuItem> menuItem =new ArrayList<>();
+		PreparedStatement ps=new PreparedStatement();
+		ResultSet rs=ps.executeQuery("select * from menu_item");  
+		while(rs.next())  
+			System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
+		con.close();  
+		
+		
+	}
+	public List<MenuItem> getMenuItemListCustomer()
+	public  MenuItem getMenuItem(menuItemId: long)
+	public void editMenuItem(menuItem: MenuItem)
+}

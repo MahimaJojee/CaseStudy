@@ -1,0 +1,38 @@
+package com.cognizant.truyum.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.sql.*
+
+import com.cognizant.truyum.model.MenuItem;
+import com.cognizant.truyum.util.DateUtil;
+
+public class MenuItemDaoSqlImpl {
+
+	public List<MenuItem> getMenuItemListAdmin()
+	{
+		Connection connection = ConnectionHandler.getConnection();
+		List<MenuItem> menuItemList =new ArrayList<>();
+		String query="select * from menu_item";
+		PreparedStatement ps=connection.prepareStatement(query);
+		ResultSet rs=ps.executeQuery();  
+		while(rs.next())  
+		{
+			System.out.println(rs.getLong(1)+"  "+rs.getString(2)+"  "+rs.getFloat(3)); 
+			menuItemList.add(new MenuItem(rs.getLong(1), rs.getString(2), rs.getFloat(3),
+					rs.getInt(4)==1,
+					rs.getDate(5),rs.getString(6),
+					rs.getInt(7)==1));
+		}	
+		ps.clearParameters();
+		connection.close();  
+		return menuItemList;
+	}
+	
+	public List<MenuItem> getMenuItemListCustomer()
+	{
+		
+	}
+	public  MenuItem getMenuItem(menuItemId: long)
+	public void editMenuItem(menuItem: MenuItem)
+}
