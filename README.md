@@ -15,18 +15,18 @@ The user interface that the OpenMRS user navigates through is as shown below:
 
 1. On logging into the system
 
-    ![image](https://user-images.githubusercontent.com/66803507/187025729-ad2736c0-352f-4a3b-b53d-c87d02c76dc6.png | width=100)
+    <img src="https://user-images.githubusercontent.com/66803507/187025729-ad2736c0-352f-4a3b-b53d-c87d02c76dc6.png" width="100" height="100">
 
 2. The heart disease risk assessment tool along with functionality to search patients from database
 
-     ![image](https://user-images.githubusercontent.com/66803507/187025756-347e1087-f9b1-444c-b22a-f1f645b9f036.png | width=100)
+     <img src="https://user-images.githubusercontent.com/66803507/187025756-347e1087-f9b1-444c-b22a-f1f645b9f036.png" width="100" height="100">
 
 3. The OpenMRS user serached for the patient and gets some of the fields filled from the database and th rest as entered by the user and clicks the predict risk of heart disease button.
 
-    ![image](https://user-images.githubusercontent.com/66803507/187025831-5425ed91-9b63-4805-b788-ff6a8a25b535.png | width=100)
+    <img src="https://user-images.githubusercontent.com/66803507/187025831-5425ed91-9b63-4805-b788-ff6a8a25b535.png" width="100" height="100">
 
 4. The results of the risk assessment is displayed to the user on a new page.
 
-      ![image](https://user-images.githubusercontent.com/66803507/187025877-caf76569-06ae-4120-bdca-f04871974be2.png | width=100)
+     <img src="https://user-images.githubusercontent.com/66803507/187025877-caf76569-06ae-4120-bdca-f04871974be2.png" width="100" height="100">
 
 
